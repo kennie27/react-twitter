@@ -1,38 +1,236 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+}
+.register {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/src/Images/0420-twitter_developer-960.jpg);
+  min-width: 375px;
+
+}
+.register1 {
+  background-image: url('/src/Images/twit.jpg');
+  background-size: cover;
+  height: 80%;
+  width: 40%;
+}
+.register2 {
+  height: 80%;
+  width: 40%;
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.register2 input{
+  width: 50%;
+  height: 4%;
+}
+.register2 button {
+  width: 30%;
+  height: 5%;
+  background-color: rgb(29, 155, 240);
+  border: none;
+}
+.bird {
+  color: rgb(29, 155, 240);
+  font-size: 200%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.login {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/src/Images/twit.jpg);
+  background-size: contain;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login1 {
+  height: 80%;
+  width: 40%;
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-radius: 10px;
+}
+
+.icon {
+  color: blue;
+  font-size: 30px;
+}
+
+.login1 input {
+  width: 70%;
+  height: 6%;
+  border-radius: 10px;
+
+}
+
+.login1 button {
+  width: 30%;
+  height: 8%;
+  background-color: blue;
+  border: none;
+  border-radius: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.sidebar {
+  height: 100vh;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #000;
+  background-color: white;
+  padding-left: 60px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar1 {
+  color: blue;
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+span {
+  color: white;
+}
+
+.sidebar a {
+  width: max-content;
+  color: rgb(0, 0, 0);
+  margin-left: 40px;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+
+}
+.sidebar p {
+  margin-left: 40px;
+  font-weight: 800;
+  margin-top: 10px;
+  color: rgb(29, 155, 240) ;
+}
+
+.icon {
+  margin-right: 5px;
+  font-size: 18px;
+  color: #000;
+}
+
+#icon {
+  color: rgb(29, 155, 240);
+  margin-left: 5px;
+  font-size: 20px;
+}
+
+#Tweet {
+  background-color: rgb(29, 155, 240);
+  border-radius: 10px;
+  border: none;
+  width: 60%;
+  color: white;
+  margin-left: 30px;
+  height: 4%;
+  margin-top: 10px;
+}
+
+
+.Messages {
+  background-color: black;
+}
+
+.Home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+
+}
+
+.Home1 {
+  width: 45%;
+  height: 100%;
+  border-right: 1px solid #000;
+
+}
+
+.Home2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  border-bottom: 1px solid #000;
+}
+
+.Home2 :nth-child(2) {
+  margin-left: 50%;
+}
+.Search {
+  height: 100vh;
+  width: 35%;
+}
+.Search input {
+  border-radius: 15px;
+  border: none;
+  padding: 10px;
+  width: 90%;
+  margin-top: 5px;
+  margin-left: 7px;
+  background-color: #dfdcdc;
+
+}.one {
+  height: 70%;
+  width: 100%;
+}
+.one textarea {
+  width: 90%;
+  height: 30%;
+  border: none;
+  resize: none;
+  outline: none;
+  font-size: 18px;
+  padding: 5px;
+}
+::placeholder{
+ font-size: 18px;
+}
+
+.holder {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.holder button {
+  width: 15%;
+  height: 50%;
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(29, 155, 240);
+  color: white;
+  margin-top: 10px;
+}
+.holder1 {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  color: rgb(29, 155, 240);
+  margin-top: 10px;
+}
+.holder1 :hover {
+  color: blue;
 }
